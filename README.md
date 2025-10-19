@@ -24,12 +24,12 @@ Saves the trained model and scaler for future use and allows loading for predict
 
 To run this project, ensure you have the following Python packages installed:
 
-yfinance: For fetching stock data.
-numpy: For numerical computations.
-pandas: For data manipulation and analysis.
-scikit-learn: For machine learning model and preprocessing.
-matplotlib: For plotting results.
-joblib: For saving and loading the model.
+yfinance: For fetching stock data.  
+numpy: For numerical computations.  
+pandas: For data manipulation and analysis.  
+scikit-learn: For machine learning model and preprocessing.  
+matplotlib: For plotting results.  
+joblib: For saving and loading the model.  
 
 Install the dependencies using:
 pip install yfinance numpy pandas scikit-learn matplotlib joblib
@@ -44,50 +44,50 @@ Input the stock ticker (e.g., AAPL for Apple Inc.) and the number of months of h
 
 ## Output:
 
-The script fetches and saves the stock data as a CSV file (e.g., aapl_stock_data_36.csv).
-It trains a Linear Regression model and outputs performance metrics (R² and RMSE for training and test sets).
-A plot (Regression_Prediction.png) is generated, showing actual vs. predicted prices and a scatter plot of predictions.
-The script predicts and displays the stock prices for the next 7 days.
-The trained model and scaler are saved as linear_regression_model.pkl.
+The script fetches and saves the stock data as a CSV file (e.g., aapl_stock_data_36.csv).  
+It trains a Linear Regression model and outputs performance metrics (R² and RMSE for training and test sets).  
+A plot (Regression_Prediction.png) is generated, showing actual vs. predicted prices and a scatter plot of predictions.  
+The script predicts and displays the stock prices for the next 7 days.  
+The trained model and scaler are saved as linear_regression_model.pkl.  
 
 
 ## Customization:
 
-Modify the features list in the run() function to experiment with different input features.
-Adjust the days parameter in predict_next_days() to forecast a different number of days.
-Change the plotting style or metrics in plot_results() for alternative visualizations.
+Modify the features list in the run() function to experiment with different input features.  
+Adjust the days parameter in predict_next_days() to forecast a different number of days.  
+Change the plotting style or metrics in plot_results() for alternative visualizations.  
 
 ## Code Structure
 
-fetch_stock_data(symbol, period): Downloads historical stock data for the specified ticker and period.
-calculate_rsi(prices, periods): Computes the Relative Strength Index (RSI) for the given price series.
-prepare_features(df): Adds technical indicators and temporal features to the dataset.
-train_model(df, features): Trains the Linear Regression model and returns evaluation metrics and test data.
-plot_results(test_results, file_name): Visualizes actual vs. predicted prices and a scatter plot.
-predict_next_days(model, scaler, df, features, days): Forecasts future stock prices iteratively.
-save_model(model, scaler, filename) and load_model(filename): Handle model persistence.
-run(): Orchestrates the entire workflow, from data fetching to prediction.
+fetch_stock_data(symbol, period): Downloads historical stock data for the specified ticker and period.  
+calculate_rsi(prices, periods): Computes the Relative Strength Index (RSI) for the given price series.  
+prepare_features(df): Adds technical indicators and temporal features to the dataset.  
+train_model(df, features): Trains the Linear Regression model and returns evaluation metrics and test data.  
+plot_results(test_results, file_name): Visualizes actual vs. predicted prices and a scatter plot.  
+predict_next_days(model, scaler, df, features, days): Forecasts future stock prices iteratively.  
+save_model(model, scaler, filename) and load_model(filename): Handle model persistence.  
+run(): Orchestrates the entire workflow, from data fetching to prediction.  
 
 ## Example Output
-Fetching AAPL data for last 36 months...
-Data saved to aapl_stock_data_36.csv
-Model saved to linear_regression_model.pkl
+Fetching AAPL data for last 36 months...  
+Data saved to aapl_stock_data_36.csv  
+Model saved to linear_regression_model.pkl  
 
-Model Performance:
-train_r2: 0.9994
-test_r2: 0.9952
-train_rmse: 0.80
-test_rmse: 1.35
-Charts saved in Regression_Prediction.png
+Model Performance:  
+train_r2: 0.9994  
+test_r2: 0.9952  
+train_rmse: 0.80  
+test_rmse: 1.35  
+Charts saved in Regression_Prediction.png  
 
-Next 7 days predicted prices:
-Day1 : 251.775
-Day2 : 250.736
-Day3 : 250.461
-Day4 : 250.389
-Day5 : 250.370
-Day6 : 250.365
-Day7 : 250.363
+Next 7 days predicted prices:  
+Day1 : 251.775  
+Day2 : 250.736  
+Day3 : 250.461  
+Day4 : 250.389  
+Day5 : 250.370  
+Day6 : 250.365  
+Day7 : 250.363  
 
 ## Limitations
 
@@ -104,5 +104,5 @@ Include real-time data fetching for more up-to-date predictions.
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.
-##Author
-#Zahra Shakeri
+## Author
+### Zahra Shakeri
