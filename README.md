@@ -5,19 +5,19 @@ This project implements a stock price prediction system using a Linear Regressio
 
 ## Features
 
-# Data Retrieval:
+### Data Retrieval:
 Downloads historical stock data using the yfinance library for a user-specified stock ticker and time period.
-# Feature Engineering: 
+### Feature Engineering: 
 Computes technical indicators such as Moving Averages (MA5, MA20), Relative Strength Index (RSI), Daily Returns, and temporal features like Day of Week and Day of Month.
-# Model Training: 
+### Model Training: 
 Trains a Linear Regression model with standardized features, using a train-test split to ensure robust evaluation.
-# Performance Evaluation: 
+### Performance Evaluation: 
 Calculates R² and RMSE metrics for both training and test sets to assess model accuracy.
-# Visualization: 
+### Visualization: 
 Generates plots to compare actual vs. predicted prices and a scatter plot to visualize prediction accuracy.
-# Forecasting: 
+### Forecasting: 
 Predicts stock prices for the next 7 days by iteratively updating features based on previous predictions.
-# Model Persistence: 
+### Model Persistence: 
 Saves the trained model and scaler for future use and allows loading for predictions without retraining.
 
 ## Requirements
